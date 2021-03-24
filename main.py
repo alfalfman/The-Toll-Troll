@@ -201,13 +201,6 @@ def play_dice():
     else:
         return False
 
-# def has_lost(unscramble, trivia, dice):
-#     if play_unscramble() == False or play_trivia() == False or play_dice() == False:
-#         print("Maximum number of attempts exceeded!")
-#         print()
-#         print("GAME OVER!")
-#         sys.exit()
-
 def main_loop():
     if play_unscramble() == False or play_trivia() == False or play_dice() == False:
         print("Maximum number of attempts exceeded!")
