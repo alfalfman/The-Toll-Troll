@@ -1,0 +1,64 @@
+# Question One: Word Descramble
+# to win the first challenge the user must first correctly descramble a given word
+    # print scrambled word
+    # Ask the user to input their guess for the descrambled world 
+        # if they guess correctly, print "Correct! Move on to question two."
+        # if they guess incorrectly, print "Wrong guess, try again. Attempt: 1"
+        # if the user guesses incorrectly, give them a hint. 
+            # print "the word starts with ___"
+        # if the user cannot guess correctly within three tries, end the game
+            # print: "Maximum attempts exceeded. Better luck next time!" and end the game
+            # print: goodbye! 
+
+Attempt #1:
+def word_scrambler():
+    correct_word = "gambit"
+    scrambled_word =  shuffle(correct_word)
+    print(f"For your first challenge, unscramble the following word:{scrambled_word}")
+
+    user_word = input("> ")
+
+    if user_word is correct_word:
+        print()
+
+
+Attempt #2:
+import random
+
+correct_word = "gambit"
+scramble_word = random.sample(correct_word, 6)
+
+scrambled_word = correct_word.join(scramble_word)
+
+
+
+print(scrambled_word)
+ 
+Attempt #3:
+
+
+def word_scrambler(answer):
+    import random
+    scramble_word = random.sample(answer, 6)
+    scramble_word = "".join(scramble_word)
+
+    return scramble_word
+
+
+def play_unscramble():
+
+    
+    scrambled_word = word_scrambler(answer)
+
+    print(f"Unscramble the following word: {scrambled_word}")
+    print()
+
+    user_guess = input("> ").lower()
+    print()
+
+    if user_guess == answer:
+        print("yay! you win!")
+    else:
+        print("boo! you lose!")
+
+play_unscramble()

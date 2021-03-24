@@ -1,0 +1,50 @@
+#The Troll Toll Pseudocode:
+#Introduction:
+# greet the player, ask for their name
+# print background on the story...ex. "Welcome ____, you're challenge is to save the princess, but first you must pay the troll toll" "to get past me, you must first answer my questions three..."
+# explain the rules of the game
+
+# Question One: Word Descramble
+# to win the first challenge the user must first correctly descramble a given word
+# print scrambled word
+# Ask the user to input their guess for the descrambled world
+# if they guess correctly, print "Correct! Move on to question two."
+# if they guess incorrectly, print "Wrong guess, try again. Attempt: 1"
+# if the user guesses incorrectly, give them a hint.
+# print "the word starts with ___"
+# if the user cannot guess correctly within three tries, end the game
+# print: "Maximum attempts exceeded. Better luck next time!" and end the game
+# print: goodbye!
+
+# Question Two: Trivia
+# to win the second challenge the user must correctly answer a trivia question
+# print: question
+# print: a) _____
+# b) ______
+# c) ______
+# d) ______
+#ask the user to choose from the options above
+# if they answer correctly print "congratulations! you may move on to the final question!"
+# if they answer incorrectly print "Wrong choice, try again!
+# reprint the original question but remove the incorrect answer they first chose.
+# ask them to input a new guess.
+# if correct print "Great! Move on to the final question"
+# if incorrect again, print "you lose, better luck next time" and end the game
+#print "Goodbye"
+
+
+
+# Question Three: Above or below?
+# roll two dice, guess if they will add up to be above or below 7; if you guess correctly you move forward.
+# ask the user to guess either above or below (input function)
+#  using randint(1,6) (?) simulate two dices being rolled, print dice 1: __ and dice 2: __
+# if the user correctly guess above/below print "congratulations! You win"
+# print an outro message about how the user successfully saved the princess
+
+# if the user incorrectly guesses, restart
+# the user only gets three guesses, so add an attempts counter
+# print "Wrong Guess! Try again! attempted tries: 1"
+# if the user does not guess correctly within three tries, end the game
+# print: 'you lose, better luck next time'
+# print: "goodbye!"
+
